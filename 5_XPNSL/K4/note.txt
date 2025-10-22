@@ -1,0 +1,2 @@
+Run exactly the same scripts as in K12, just replacing the population list and annotation files
+with the K=4 files provided in this folder

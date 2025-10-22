@@ -1,0 +1,12 @@
+E_EAsia
+IDN_N
+IDN_S
+M_SEAsia
+NEAsia
+NE_SAsia
+PHL_N
+PHL_S
+TWN_A
+TWN_B
+UPL_NEAsia
+W_EAsia
