@@ -2,7 +2,7 @@
 
 file=$1
 
-list=`grep -v NA $1 | awk '$1 < 1' | sort -k1,1n`
+list=`grep -v NA $1 | awk '$1 < 1' | sort -g`
 
 num=`echo "$list" | wc -l`
 
