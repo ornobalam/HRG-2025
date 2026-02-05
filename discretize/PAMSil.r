@@ -169,15 +169,17 @@ for (k in 2:max_k)
 	
 	pops <- c()
 	for (K in 1:k)
-	{
-		poop <- names(which.max(table(meta[list[which(clu$clustering[list] == K)],4])))
-		if (length(poop) > 0){
-		if (poop %in% pops)
-		{
-			poop <- paste(poop,"A",K,sep="")
-		}}
-		pops <- c(pops, poop )
-	}
+    {
+            poop <- names(which.max(table(meta[list[which(clu$clustering[list] == K)],4])))
+            if (length(poop) > 0){
+            if (poop %in% pops)
+            {
+                    poop <- paste(poop,"A",K,sep="")
+            }}
+            else {
+                    poop <- "none" }
+            pops <- c(pops, poop )
+    }
 
 	write.table(cbind(sort(as.character(meta[list,1])), sort(as.character(meta[list,1])) ),paste("list2keepK",k,".txt",sep=""),quote = F, sep = "\t",row.names = F, col.names = F)
 	opps <- rep(NA, nrow(meta))
